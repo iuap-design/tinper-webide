@@ -1,0 +1,38 @@
+{
+  "name": "tinper-webide",
+  "version": "1.0.0",
+  "description": "webide for tinper",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/tinper-webide.git"
+  },
+  "keywords": [
+    "webide",
+    "ui",
+    "kit",
+    "tinper",
+    "neoui"
+  ],
+  "author": "Yonyou-FED",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuap-design/tinper-webide/issues"
+  },
+  "homepage": "https://github.com/iuap-design/tinper-webide#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-body": "^1.6.0",
+    "koa-gzip": "^0.1.0",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-zip": "^3.2.0"
+  }
+}
