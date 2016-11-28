@@ -120,7 +120,7 @@ module.exports = {
     router.post('/downloadDemo',function *(next) {
       var self = this;
       var data = this.request.body;
-
+      
       var viewCode = "", zipName = 'download.zip';
       var styles = data.cssCode;
       var htmls = data.htmlCode;
