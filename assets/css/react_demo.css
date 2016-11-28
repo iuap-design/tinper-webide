@@ -1,0 +1,39 @@
+.margin-right-20{
+	margin-right: 20px;
+}
+.inline{
+	display: inline;
+}
+.demo-badge .u-badge {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.demo-form-group .form-group{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.demo-button button{
+	margin-right: 10px;
+}
+.demo-input-group .input-group {
+	margin-top: 10px;
+}
+#ReactAlertDemo3 button{
+	margin-bottom: 10px;
+}
+#ReactFormControlDemo2 .demo-form-control span{
+	padding: 10px;
+}
+#beeButtonDemo1 button{
+	margin-right: 10px;
+}
+#beeButtonDemo2 button{
+	margin-right: 10px;
+}
+#beeButtonDemo3 button{
+	margin-right: 10px;
+}
+#beeSwitchDemo3 .bee-switch{
+	margin-bottom: 10px;
+}

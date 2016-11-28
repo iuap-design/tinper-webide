@@ -3,8 +3,8 @@ var path = require('path');
 var gulp = require('gulp');
 var zip = require('gulp-zip');
 //uui定制
-var customized = require("./customized");
-var down = require("./down");
+// var customized = require("./customized");
+// var down = require("./down");
 
 var downLoad = require('./download.js');
 // 新定制
@@ -65,11 +65,11 @@ module.exports = {
       var url = this.request.body.wUrl;
       var datas = {}
       var _html  = _css = _script = '';
-
+    //   console.log("url:",url);
       // 相对于当前执行文件的目录
-      var widgetPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.html');
-      var cssPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.css');
-      var scriptPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.js');
+      var widgetPath = path.resolve(__dirname, '../public/' + url + '/widget.html');
+      var cssPath = path.resolve(__dirname, '../public/' + url + '/widget.css');
+      var scriptPath = path.resolve(__dirname, '../public/' + url + '/widget.js');
 
       if (fs.existsSync( widgetPath ))
         _html = fs.readFileSync( widgetPath );
@@ -97,26 +97,25 @@ module.exports = {
     });
 
     //uui定制相关
-    router.post('/customized', function *(next) {
-      var self = this;
-      yield function(cb){
-          customized.run(self,cb);
-      }
-
-    });
+    // router.post('/customized', function *(next) {
+    //   var self = this;
+    //   yield function(cb){
+    //       customized.run(self,cb);
+    //   }
+    //
+    // });
 
     // 新定制
-    router.post('/package', function *(next) {
-      var self = this;
-      console.log(this.request.body);
-
-      var data = this.request.body;
-      var pack = require('./pack.js');
-      yield function(cb) {
-        pack(data,self,cb);
-      };
-      // this.body = pack(data);
-    });
+    // router.post('/package', function *(next) {
+    //   var self = this;
+    //   console.log(this.request.body);
+    //
+    //   var data = this.request.body;
+    //   var pack = require('./pack.js');
+    //   yield function(cb) {
+    //     pack(data,self,cb);
+    //   };
+    // });
 
     router.post('/downloadDemo',function *(next) {
       var self = this;

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/iuap-design/tinper-webide#readme",
   "dependencies": {
+    "gulp-concat": "^2.6.1",
     "koa": "^1.2.4",
     "koa-body": "^1.6.0",
     "koa-gzip": "^0.1.0",
