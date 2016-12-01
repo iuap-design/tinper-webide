@@ -33,7 +33,7 @@
 	    transition: .25s;
 	    position: absolute;
 	    top: 100%;
-	    left: 0;
+	    left: 13px;
 	    z-index: 1200;
 	    display: none;
 	    float: left;
@@ -110,8 +110,15 @@
 	    text-decoration: none;
 	    background-color: #eee;
 	}
+
+@media (max-width: 768px) {
+	.self-color-margin-top-20 {
+		margin-top: 10px;
+	}
+}
 /*下拉菜单样式结束*/
 
 .font10{
     font-size: 10px;
 }
+
