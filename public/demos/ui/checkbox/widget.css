@@ -60,3 +60,15 @@
     -webkit-transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
     transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
 }
+.u-checkbox-label-absolute{
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+.u-show-border{
+    border:1px solid red;
+}
+
+.u-choseChecked{
+    margin-bottom: 20px;
+}
