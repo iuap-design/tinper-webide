@@ -24,9 +24,6 @@
     }, {
         "name": "图片",
         "url": "demos/ui/image"
-    }, {
-        "name": "卡片",
-        "url": "demos/ui/cards"
     }]
 }, {
     "name": "组件",
@@ -37,18 +34,6 @@
         "name": "消息框",
         "url": "demos/ui/dialog"
     },{
-        "name": "日期",
-        "url": "demos/ui/datetime"
-    },{
-        "name": "年月",
-        "url": "demos/ui/yearmonth"
-    },{
-        "name": "月日",
-        "url": "demos/ui/monthdate"
-    },{
-        "name": "月份",
-        "url": "demos/ui/month"
-    }, {
         "name": "分页",
         "url": "demos/ui/pagination"
     }, {
@@ -61,8 +46,8 @@
         "name": "下拉菜单",
         "url": "demos/ui/menu"
     }, {
-        "name": "色带",
-        "url": "demos/ui/ribbon"
+        "name": "上传控件",
+        "url": "demos/ui/uploader"
     }, {
         "name": "步骤",
         "url": "demos/ui/step"
@@ -70,32 +55,20 @@
         "name": "页签",
         "url": "demos/ui/tabs"
     }, {
-        "name": "列表",
-        "url": "demos/ui/listgroup"
-    }, {
-        "name": "树",
-        "url": "demos/complex/tree-dt"
-    }, {
-        "name": "上传控件",
-        "url": "demos/ui/uploader"
-    }, {
-        "name": "穿梭框",
-        "url": "demos/complex/transfer-dt"
-    }, {
-        "name": "高级搜索",
-        "url": "demos/complex/advsearch"
-    }, {
-        "name": "筛选栏",
-        "url": "demos/complex/filterBar"
-    }, {
-        "name": "导航条",
-        "url": "demos/ui/navbar"
-    }, {
-        "name": "天气",
-        "url": "demos/ui/weather"
-    }, {
-        "name": "图表",
-        "url": "demos/ui/chart"
+        "name": "日期组件",
+        "sub": [{
+            "name": "日期",
+            "url": "demos/ui/datetime"
+        },{
+            "name": "年月",
+            "url": "demos/ui/yearmonth"
+        },{
+            "name": "月日",
+            "url": "demos/ui/monthdate"
+        },{
+            "name": "月份",
+            "url": "demos/ui/month"
+        } ]
     }, {
         "name": "表单",
         "sub": [{
@@ -134,7 +107,35 @@
             "url": "demos/tables/tree-table"
         }]
 
-    }]
+    }, {
+        "name": "复杂组件",
+        "sub": [ {
+            "name": "卡片",
+            "url": "demos/ui/cards"
+        }, {
+            "name": "色带",
+            "url": "demos/ui/ribbon"
+        }, {
+            "name": "列表",
+            "url": "demos/ui/listgroup"
+        }, {
+            "name": "穿梭框",
+            "url": "demos/complex/transfer-dt"
+        }, {
+            "name": "高级搜索",
+            "url": "demos/complex/advsearch"
+        }, {
+            "name": "筛选栏",
+            "url": "demos/complex/filterBar"
+        }, {
+            "name": "导航条",
+            "url": "demos/ui/navbar"
+        }, {
+            "name": "天气",
+            "url": "demos/ui/weather"
+        } ]
+    }
+   ]
 }, {
     "name": "grid控件",
     "sub": [{
@@ -236,6 +237,9 @@
     }, {
         "name": "校验",
         "url": "demos/kero/validate"
+    }, {
+        "name": "树",
+        "url": "demos/complex/tree-dt"
     }]
 }, {
     "name": "空页面",
