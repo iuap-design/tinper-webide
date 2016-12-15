@@ -330,16 +330,16 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     font-size: 12px;
 }
 
-.u-nav .u-nav-link .icon-pointer:before {
+.u-nav .u-nav-link  .icon-pointer:before {
     content: "\e611";
     font-size: 12px;
     font-family: "uf" !important;
     font-style: normal;
 }
-.u-nav .u-nav-link-open .icon-pointer:before {
+.u-nav .u-nav-link.u-nav-link-open  .icon-pointer:before {
     content: "\e608";
-    font-size: 12px;
-    font-family: "uf" !important;
+    /*font-size: 12px;
+    font-family: "uf" !important;*/
 
 }
 
@@ -392,7 +392,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 
 
 .u-navlayout-drawer .u-nav .u-nav-link-open + .u-nav-sub {
-    max-height: 1200px;
+    max-height: 1500px;
 }
 
 .u-navlayout-drawer .u-nav .u-nav-sub .u-nav-link {
