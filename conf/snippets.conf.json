@@ -133,10 +133,8 @@
         }, {
             "name": "天气",
             "url": "demos/ui/weather"
-        }, {
-            "name": "图表",
-            "url": "demos/ui/chart"
-        } ]
+        }
+     ]
     }
    ]
 }, {
