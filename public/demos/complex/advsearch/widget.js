@@ -11,7 +11,14 @@ u.on(toggleBtn, 'click', function(){
     u.removeClass(toggleIcon, 'uf-anglearrowdown').addClass(toggleIcon, 'uf-uparrow');
      this.querySelector('span').innerText='收起';
   }
-})
+});
+var clearBtn = document.querySelector('#clear-input');
+u.on(clearBtn, 'click', function(){
+    var inputs = document.querySelectorAll('#condition-row input[type="text"]');
+    for(var i=0;i<inputs.length;i++){
+        inputs[i].value="";
+    }
+});
 
 var inputDom=document.querySelectorAll('input');
 var searchbtn=document.querySelector('[data-role="searchbtn"]');
