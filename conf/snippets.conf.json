@@ -16,8 +16,11 @@
         "name": "开关",
         "url": "demos/ui/switch"
     }, {
-        "name": "徽章标签",
+        "name": "徽章",
         "url": "demos/ui/badge"
+    }, {
+        "name": "标签",
+        "url": "demos/ui/tag"
     }, {
         "name": "辅助样式",
         "url": "demos/assist"
@@ -31,8 +34,20 @@
         "name": "面包屑",
         "url": "demos/ui/breadcrumbs"
     }, {
+        "name": "模态框",
+        "url": "demos/ui/modalDialog"
+    }, {
+        "name": "提醒",
+        "url": "demos/ui/alert"
+    }, {
+        "name": "通知",
+        "url": "demos/ui/notification"
+    }, {
         "name": "消息框",
-        "url": "demos/ui/dialog"
+        "url": "demos/ui/message"
+    },{
+        "name": "确认框",
+        "url": "demos/ui/popconfirm"
     },{
         "name": "分页",
         "url": "demos/ui/pagination"
