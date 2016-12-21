@@ -5,7 +5,7 @@ var params = location.href.match(/\?.*cv=(\w*)($|&)/), cv='dt';
 if(params) cv = params[1]
 
 if(u.isMobile||u.isIPAD||u.isAndroidPAD){
-	$('#main-content').removeClass('ov-hide');
+	$('#main-content').removeClass('ov-hide').addClass('mob-ovx-auto');
 }
 
 var app;
