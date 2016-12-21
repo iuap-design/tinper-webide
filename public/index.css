@@ -356,6 +356,9 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 .ov-hide {
     overflow: hidden;
 }
+.mob-ovx-auto {
+    overflow-x: auto!important;
+}
 
 
 @media screen and (min-width: 1024px) {
