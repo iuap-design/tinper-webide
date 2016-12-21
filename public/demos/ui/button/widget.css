@@ -67,3 +67,6 @@ ul li{
 .u-button.danger.active, .u-button.danger:active, .open > .dropdown-toggle.u-button.danger {
     background-color: #e53935;
     border-color: #e53935; }
+.u-button-group > :not(:last-child){
+    border-right:none;
+}

@@ -72,3 +72,6 @@
 .u-choseChecked{
     margin-bottom: 20px;
 }
+.u-widget-body p:first-child{
+   margin-top:0;
+}

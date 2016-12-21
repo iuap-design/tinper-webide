@@ -1,0 +1,7 @@
+.message-demo .u-widget-body{
+	min-height: 280px;
+}
+
+.example .u-message{
+    position: inherit;
+}
