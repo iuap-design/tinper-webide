@@ -31,15 +31,4 @@ u.on(msgBtn2, 'click', function () {
             alert('cancel')
         }
     });
-})
-
-
-var okButton = document.body.querySelector(".u-msg-ok");
-u.on(okButton, 'click', function () {
-    alert('ok');
-});
-
-var cancelButton = document.body.querySelector(".u-msg-cancel");
-u.on(cancelButton, 'click', function () {
-    md.close();
 });
