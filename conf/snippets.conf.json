@@ -212,9 +212,6 @@
         "name": "基本页面框架布局",
         "url": "demos/layouts/frame"
     }, {
-        "name": "悬浮页面框架布局",
-        "url": "demos/layouts/iconFrame"
-    }, {
         "name": "可伸缩菜单布局",
         "url": "demos/layouts/menuNavLayout"
     }, {
