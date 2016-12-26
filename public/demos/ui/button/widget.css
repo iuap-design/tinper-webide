@@ -71,7 +71,7 @@ ul li{
     border-right:none;
 }
 @media only screen and (max-width: 400px) {
-    .u-margin-top-10{
-        margin-top: 5px;
+    .u-margin-top-3{
+        margin-top: 3px;
     }
 }
