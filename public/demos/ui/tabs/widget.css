@@ -2,6 +2,10 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+ .u-vertical .u-tabs__tab.is-active{
+     border-top-left-radius: 10px;
+     border-top-right-radius:0;
+ }
 .u-overflow{
     overflow: hidden;
 }
