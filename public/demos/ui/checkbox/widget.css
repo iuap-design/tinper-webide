@@ -6,9 +6,11 @@
 }
 
 .u-checkbox-labelauty:hover {
-    border: solid 2px rgb(63,81,181);
+    border: solid 2px #3F51B5;
     padding: 1px 7px;
-    color: rgb(63,81,181);
+    background-color: #F7F7F7;
+    /*border-color: rgb(92,107,192);*/
+   /* color: rgb(63,81,181);*/
 }
 
 .u-checkbox-labelauty.u-checkbox.is-upgraded {
@@ -65,6 +67,7 @@
     position: absolute;
     top: 0;
     left: 24px;
+    cursor: pointer;
 }
 .u-show-border{
    /* border:1px solid red;*/
