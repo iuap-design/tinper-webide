@@ -22,6 +22,7 @@
 .u-checkbox-labelauty.is-checked {
     border: 2px solid rgb(63,81,181);
     padding: 1px 7px;
+    color: rgb(63,81,181);
 }
 
 .u-checkbox-labelauty .u-checkbox-label {
