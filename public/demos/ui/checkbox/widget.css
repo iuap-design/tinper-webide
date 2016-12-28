@@ -6,9 +6,9 @@
 }
 
 .u-checkbox-labelauty:hover {
-    border: solid 2px #e4393c;
+    border: solid 2px rgb(63,81,181);
     padding: 1px 7px;
-    color: #e4393c;
+    color: rgb(63,81,181);
 }
 
 .u-checkbox-labelauty.u-checkbox.is-upgraded {
@@ -20,7 +20,7 @@
 }
 
 .u-checkbox-labelauty.is-checked {
-    border: solid 2px #e4393c;
+    border: 2px solid rgb(63,81,181);
     padding: 1px 7px;
 }
 
@@ -40,7 +40,7 @@
     height: 0;
     content: ' ';
     border-left: 12px solid transparent;
-    border-bottom: 12px solid #e4393c;
+    border-bottom: 12px solid rgb(63,81,181);
 }
 
 .u-checkbox-labelauty.is-checked:after {
@@ -66,7 +66,8 @@
     left: 24px;
 }
 .u-show-border{
-    border:1px solid red;
+   /* border:1px solid red;*/
+    border: 1px  solid rgb(63,81,181);
 }
 
 .u-choseChecked{
