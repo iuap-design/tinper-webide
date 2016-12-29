@@ -21,7 +21,7 @@
 
 .desc{
     position:absolute;
-    bottom:-15px;
+    bottom:-30px;
     font-size:12px;
 
 }
@@ -40,4 +40,11 @@
 }
 .margin-bottom-12{
     margin-bottom: 12px;
+}
+.height{
+    margin-bottom: 50px;
+}
+.height div{
+    position: relative;
+    margin-top: 50px;
 }
