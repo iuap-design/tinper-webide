@@ -62,3 +62,8 @@
 .u-margin-top-66{
     margin-top: 66px;
 }
+@media (max-width: 767px){
+    .u-fontSize-adaption{
+        font-size:12px;
+    }
+}
