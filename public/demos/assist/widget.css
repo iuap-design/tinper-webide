@@ -8,10 +8,11 @@
 
 .u-widget-body .width div{
 	height:50px;
-	margin:0px 15px;
+	margin:0px 15px 50px;
     border:solid 1px #afa7a7;
     background:#ccceb9;
     display:inline-block;
+
 }
 
 .u-widget-body p{
@@ -47,4 +48,14 @@
 .height div{
     position: relative;
     margin-top: 50px;
+}
+.width div{
+    position: relative;
+}
+.width{
+    margin: 0 -30px;
+}
+.width .desc{
+    bottom: -30px;
+    width: 50px;
 }
