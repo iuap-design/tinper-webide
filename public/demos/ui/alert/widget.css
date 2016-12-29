@@ -5,3 +5,6 @@
 .example .u-message{
     position: inherit;
 }
+.u-relative{
+    position: relative;
+}
