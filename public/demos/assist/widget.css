@@ -34,3 +34,10 @@
 .vertical-align-top{
     vertical-align: top;
 }
+.text-justify span{
+    display: inline-block /* Opera */;
+    padding-left: 100%;
+}
+.margin-bottom-12{
+    margin-bottom: 12px;
+}
