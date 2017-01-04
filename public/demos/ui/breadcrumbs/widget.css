@@ -2,3 +2,7 @@
     content: "\e6a2";
     font-family: 'uf';
 }
+ .u-link:hover {
+    color: darkblue;
+     text-decoration: none;
+}
