@@ -1,4 +1,4 @@
-.u-widget-body .height div{
+.u-widget-body .center-block div{
 	width: 50px;
 	/*margin:0px 15px;*/
     border:solid 1px #afa7a7;
@@ -6,15 +6,22 @@
     display:inline-block;
 }
 
-.u-widget-body .width div{
+.u-widget-body .u-width-style div{
 	height:50px;
 	margin:0px 15px 50px;
     border:solid 1px #afa7a7;
     background:#ccceb9;
-    display:inline-block;
+    position: relative;
+    margin-top: 50px;
+    /*display:inline-block;*/
 
 }
 
+
+.u-width-style{
+    width:90%;
+    margin:0 auto;
+}
 .u-widget-body p{
 	margin-top: -10px;
 	margin-bottom: 30px;
@@ -66,7 +73,17 @@
     .u-fontSize-adaption{
         font-size:12px;
     }
+    .u-row-width-padding{
+        padding-left:0;
+        padding-right:0
+    }
+    .u-widget-body .u-width-style div{
+        margin: 0px 15px 50px -5px;
+    }
 }
 .list-style-none{
     list-style: none;
+}
+.u-table-width-style{
+    width:20%;
 }
