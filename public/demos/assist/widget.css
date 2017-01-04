@@ -69,6 +69,9 @@
 .u-margin-top-66{
     margin-top: 66px;
 }
+.u-padding-left-10{
+    padding-left: 10px;
+}
 @media (max-width: 767px){
     .u-fontSize-adaption{
         font-size:12px;
@@ -80,7 +83,15 @@
     .u-widget-body .u-width-style div{
         margin: 0px 15px 50px -5px;
     }
+    .u-vertical-padding-5{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .u-padding-left-10{
+        padding-left: 5px;
+    }
 }
+
 .list-style-none{
     list-style: none;
 }
