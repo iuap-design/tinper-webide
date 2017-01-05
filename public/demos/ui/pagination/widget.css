@@ -21,3 +21,9 @@
 .u-pagination.pagination-center,.u-pagination.pagination-right{
     display: inline-block!important;
 }
+.pagination-gap > li > a:hover {
+    color: #666666;
+    background-color: #eee;
+    border-color: #d7d7d7;
+    cursor: pointer;
+}
