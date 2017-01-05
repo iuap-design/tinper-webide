@@ -73,6 +73,9 @@
 .center-block-wdith{
     width:70%
 }
+.u-padding-left-3{
+    padding-left: 10px;
+}
 @media (max-width: 767px){
     .u-fontSize-adaption{
         font-size:12px;
@@ -88,8 +91,8 @@
         padding-left: 5px;
         padding-right: 5px;
     }
-    .u-padding-left-10{
-        padding-left: 5px;
+    .u-padding-left-3{
+        padding-left: 3px;
     }
     .center-block-wdith{
         width:100%;
@@ -98,6 +101,9 @@
     .u-width-style{
         width:100%;
         margin:0 auto;
+    }
+    .u-padding-left-3>.u-button {
+        min-width:80%;
     }
 }
 
