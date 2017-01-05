@@ -27,3 +27,10 @@
     border-color: #d7d7d7;
     cursor: pointer;
 }
+.u-pagination > li[role="gap"] > a {
+    background-color: transparent;
+    border-bottom: 0px solid #d7d7d7;
+    border-top: 0px solid #d7d7d7;
+    padding: 5px 11px;
+    line-height: 1.57142857;
+}
