@@ -105,6 +105,12 @@
     .u-padding-left-3>.u-button {
         min-width:80%;
     }
+    .u-padding-left-25{
+      padding-left: 25px;
+    }
+    .u-mobile-font-12{
+        font-size: 12px;
+    }
 }
 
 .list-style-none{
