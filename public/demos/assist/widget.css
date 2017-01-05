@@ -19,7 +19,7 @@
 
 
 .u-width-style{
-    width:90%;
+    width:70%;
     margin:0 auto;
 }
 .u-widget-body p{
@@ -70,6 +70,9 @@
 .u-padding-left-10{
     padding-left: 10px;
 }
+.center-block-wdith{
+    width:70%
+}
 @media (max-width: 767px){
     .u-fontSize-adaption{
         font-size:12px;
@@ -79,7 +82,7 @@
         padding-right:0
     }
     .u-widget-body .u-width-style div{
-        margin: 0px 15px 50px -5px;
+        margin: 0px 15px 50px 0 ;
     }
     .u-vertical-padding-5{
         padding-left: 5px;
@@ -87,6 +90,14 @@
     }
     .u-padding-left-10{
         padding-left: 5px;
+    }
+    .center-block-wdith{
+        width:100%;
+        margin:0 auto
+    }
+    .u-width-style{
+        width:100%;
+        margin:0 auto;
     }
 }
 
