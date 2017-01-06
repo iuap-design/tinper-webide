@@ -1,7 +1,7 @@
 #paginationColor > .active > a, #paginationColor > .active > span, #paginationColor > .active > a:hover, #paginationColor > .active > span:hover, #paginationColor > .active > a:focus, #paginationColor > .active > span:focus {
     color: #fff;
-    background-color: #00bcd4;
-    border-color: #00bcd4;
+    background-color: #ffa726;
+    border-color: #ffa726;
 }
 
 .u-widget-body .desc{
@@ -33,4 +33,36 @@
     border-top: 0px solid #d7d7d7;
     padding: 5px 11px;
     line-height: 1.57142857;
+}
+#paginationColor > .active > a.success {
+    color: rgb(255,255,255);
+    background-color: #4caf50;
+    border: 1px #4caf50 solid;
+}
+#paginationColor > .active > a.primary {
+    color: rgb(255,255,255);
+    background-color: rgb(63,81,181);
+    border: 1px rgb(63,81,181) solid;
+}
+#paginationColor > .active > a.warning {
+    color: #fff;
+    background-color: #ff9800;
+    border: 1px #ff9800 solid;
+}
+#paginationColor > .active > a.danger {
+    color: #fff;
+    background-color: #f44336;
+    border: 1px #f44336 solid;
+}
+#paginationColor > .active > a.info {
+    color: #fff;
+    background-color: #26c6da;
+    border-color: #26c6da;
+}
+.u-pagination > .active > a, .u-pagination > .active > span, .u-pagination > .active > a:hover, .u-pagination > .active > span:hover, .u-pagination > .active > a:focus, .u-pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: rgb(63,81,181);
+    border-color: rgb(63,81,181);
 }
