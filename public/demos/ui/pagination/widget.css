@@ -27,13 +27,13 @@
     border-color: #d7d7d7;
     cursor: pointer;
 }
-.u-pagination > li[role="gap"] > a {
+/*.u-pagination > li[role="gap"] > a {
     background-color: transparent;
     border-bottom: 0px solid #d7d7d7;
     border-top: 0px solid #d7d7d7;
     padding: 5px 11px;
     line-height: 1.57142857;
-}
+}*/
 #paginationColor > .active > a.success {
     color: rgb(255,255,255);
     background-color: #4caf50;
@@ -59,10 +59,23 @@
     background-color: #26c6da;
     border-color: #26c6da;
 }
-.u-pagination > .active > a, .u-pagination > .active > span, .u-pagination > .active > a:hover, .u-pagination > .active > span:hover, .u-pagination > .active > a:focus, .u-pagination > .active > span:focus {
-    z-index: 2;
-    color: #fff;
-    cursor: default;
-    background-color: rgb(63,81,181);
-    border-color: rgb(63,81,181);
+.u-pagination > li[role="gap"] > a {
+    background-color: transparent;
+    border-bottom: 0px solid #d7d7d7;
+    border-top: 0px solid #d7d7d7;
+    padding: 5px 11px;
+    line-height: 1.57142857;
 }
+.pagination-sm > li[role="gap"] > a {
+    padding: 3px 9px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.pagination-lg > li[role="gap"] > a {
+    padding: 9px 15px;
+    font-size: 16px;
+    line-height: 1.33333;
+}
+
+
+
