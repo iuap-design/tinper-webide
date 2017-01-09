@@ -229,6 +229,12 @@
     }, {
         "name": "复选框",
         "url": "demos/kero/checkbox"
+    },{
+        "name": "普通输入框",
+        "url": "demos/kero/textfield"
+    }, {
+        "name": "多行文本输入框",
+        "url": "demos/kero/textarea"
     }, {
         "name": "下拉框",
         "url": "demos/kero/combobox"
