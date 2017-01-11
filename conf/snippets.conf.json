@@ -51,6 +51,9 @@
     },{
         "name": "分页",
         "url": "demos/ui/pagination"
+    },{
+        "name": "树",
+        "url": "demos/ui/tree"
     }, {
         "name": "加载进度条",
         "url": "demos/ui/progress"
@@ -258,7 +261,7 @@
         "url": "demos/kero/validate"
     }, {
         "name": "树",
-        "url": "demos/complex/tree-dt"
+        "url": "demos/kero/tree-dt"
     }]
 }, {
     "name": "空页面",
