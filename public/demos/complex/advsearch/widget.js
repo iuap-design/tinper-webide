@@ -4,11 +4,11 @@ u.on(toggleBtn, 'click', function(){
   var toggleIcon = this.querySelector('i');
   if (u.hasClass(conditionRow, 'u-visible')){
       u.removeClass(conditionRow, 'u-visible').addClass(conditionRow, 'u-not-visible');
-      u.removeClass(toggleIcon, 'uf-uparrow').addClass(toggleIcon, 'uf-anglearrowdown');
+      u.removeClass(toggleIcon, 'uf-arrow-up').addClass(toggleIcon, 'uf-arrow-down');
        this.querySelector('span').innerText='高级';
   }else{
     u.removeClass(conditionRow, 'u-not-visible').addClass(conditionRow, 'u-visible');
-    u.removeClass(toggleIcon, 'uf-anglearrowdown').addClass(toggleIcon, 'uf-uparrow');
+    u.removeClass(toggleIcon, 'uf-arrow-down').addClass(toggleIcon, 'uf-arrow-up');
      this.querySelector('span').innerText='收起';
   }
 });
