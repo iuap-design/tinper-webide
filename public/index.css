@@ -236,11 +236,11 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     margin: 100px auto;
 }
 
-@media screen and (max-width: 1023px) {
+/*@media screen and (max-width: 1023px) {
     #menubutton {
         display: none;
     }
-}
+}*/
 
 #menubutton .hide {
     display: none!important;
