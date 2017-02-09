@@ -199,6 +199,9 @@
     }, {
         "name": "主（列表）子（表格控件）交互",
         "url": "demos/grids/mainsub"
+    }, {
+        "name": "grid增删改操作",
+        "url": "demos/grids/baseOpt"
     }]
 }, {
     "name": "布局",
