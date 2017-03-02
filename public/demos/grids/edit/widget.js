@@ -179,15 +179,7 @@ viewModel = {
                   "percent":"110",
                   "password":"110",
                   "password":"110",
-                  "currency": {
-                      "value": "200.00",
-                      "meta": {
-                          "precision": "2",
-                          "max": "3000",
-                          "min": "0",
-                          "curSymbol": "$"
-                      }
-                  },
+                  "currency": "200.00",
                   "pass": "Y",
                   "pid": "",
                   "id": "04",
@@ -212,15 +204,7 @@ viewModel = {
                   "percent":"110",
                   "password":"110",
                   "password":"110",
-                  "currency": {
-                      "value": "200.00",
-                      "meta": {
-                          "precision": "2",
-                          "max": "3000",
-                          "min": "0",
-                          "curSymbol": "$"
-                      }
-                  },
+                  "currency": "200.00",
                   "pass": "002",
                   "pid": "04",
                   "id": "01",
@@ -245,15 +229,7 @@ viewModel = {
                   "percent":"110",
                   "password":"110",
                   "password":"110",
-                  "currency": {
-                      "value": "300.00",
-                      "meta": {
-                          "precision": "2",
-                          "max": "3000",
-                          "min": "0",
-                          "curSymbol": "$"
-                      }
-                  },
+                  "currency": "300.00",
                   "pass": "001",
                   "pid": "",
                   "id": "02",
@@ -278,15 +254,7 @@ viewModel = {
                   "percent":"110",
                   "password":"110",
                   "password":"110",
-                  "currency": {
-                      "value": "300.00",
-                      "meta": {
-                          "precision": "2",
-                          "max": "3000",
-                          "min": "0",
-                          "curSymbol": "$"
-                      }
-                  },
+                  "currency": "300.00",
                   "pass": "003",
                   "pid": "01",
                   "id": "03",
