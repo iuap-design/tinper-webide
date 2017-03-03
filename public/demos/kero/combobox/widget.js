@@ -1,5 +1,3 @@
-// JS
-
 /**
  * viewModel 创建数据模型
  * dt1 创建的数据集
@@ -15,6 +13,7 @@ viewModel = {
             f2: {}
         }
     }),
+    //定义单选框的下拉数据源
     comboData:[{name:'cc',value:'03'},{name:'dd',value:'04'}]
 };
 
@@ -33,10 +32,9 @@ app = u.createApp({
  * 修改viewModel默认绑定的数据值
  * @type {Array}
  */
-var combo1Data = [{name:'cc1',value:'03'},{name:'dd1',value:'04'}];
-var combo1Obj = document.getElementById('combo1')['u.Combo'];
-
-combo1Obj.setComboData(combo1Data);
+var combo1Data = [{name:'cc1',value:'13'},{name:'dd1',value:'14'}];
+//设置多选下拉框的数据源
+app.getComp('mutil').comp.setComboData(combo1Data);
 
 // 创建空行，设置默认值
 var r = viewModel.dt1.createEmptyRow();
