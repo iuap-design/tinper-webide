@@ -1,5 +1,6 @@
 [{
     "name": "元素",
+    "index": "yuansu",
     "sub": [{
         "name": "按钮",
         "url": "demos/ui/button"
@@ -12,7 +13,7 @@
     }, {
         "name": "下拉框",
         "url": "demos/ui/combobox"
-    },{
+    }, {
         "name": "开关",
         "url": "demos/ui/switch"
     }, {
@@ -30,6 +31,7 @@
     }]
 }, {
     "name": "组件",
+    "index": "zujian",
     "sub": [{
         "name": "面包屑",
         "url": "demos/ui/breadcrumbs"
@@ -45,13 +47,13 @@
     }, {
         "name": "消息框",
         "url": "demos/ui/message"
-    },{
+    }, {
         "name": "确认框",
         "url": "demos/ui/popconfirm"
-    },{
+    }, {
         "name": "分页",
         "url": "demos/ui/pagination"
-    },{
+    }, {
         "name": "树",
         "url": "demos/ui/tree"
     }, {
@@ -73,90 +75,75 @@
         "name": "页签",
         "url": "demos/ui/tabs"
     }, {
-        "name": "日期组件",
-        "sub": [{
-            "name": "日期",
-            "url": "demos/ui/datetime"
-        },{
-            "name": "年月",
-            "url": "demos/ui/yearmonth"
-        },{
-            "name": "月日",
-            "url": "demos/ui/monthdate"
-        },{
-            "name": "月份",
-            "url": "demos/ui/month"
-        } ]
+        "name": "日期",
+        "url": "demos/ui/datetime"
     }, {
-        "name": "表单",
-        "sub": [{
-            "name": "基本元素",
-            "url": "demos/forms/baseElements"
-        }, {
-            "name": "表单布局",
-            "url": "demos/forms/formLayout"
-        }, {
-            "name": "元素校验",
-            "url": "demos/forms/validate"
-        }, {
-            "name": "浏览态表单",
-            "url": "demos/forms/browse"
-        }]
+        "name": "年月",
+        "url": "demos/ui/yearmonth"
     }, {
-
-        "name": "基础表格",
-        "sub": [{
-            "name": "简单表格",
-            "url": "demos/tables/simple"
-        }, {
-            "name": "简单表格(DT)",
-            "url": "demos/tables/simple-dt"
-        }, {
-            "name": "固定表头",
-            "url": "demos/tables/fixedheader"
-        }, {
-            "name": "分页",
-            "url": "demos/tables/pagination"
-        }, {
-            "name": "主子表",
-            "url": "demos/tables/main-child"
-        }, {
-            "name": "左树右表",
-            "url": "demos/tables/tree-table"
-        }]
-
+        "name": "月日",
+        "url": "demos/ui/monthdate"
     }, {
-        "name": "复杂组件",
-        "sub": [ {
-            "name": "卡片",
-            "url": "demos/ui/cards"
-        }, {
-            "name": "色带",
-            "url": "demos/ui/ribbon"
-        }, {
-            "name": "列表",
-            "url": "demos/ui/listgroup"
-        }, {
-            "name": "穿梭框",
-            "url": "demos/complex/transfer-dt"
-        }, {
-            "name": "高级搜索",
-            "url": "demos/complex/advsearch"
-        }, {
-            "name": "筛选栏",
-            "url": "demos/complex/filterBar"
-        }, {
-            "name": "导航条",
-            "url": "demos/ui/navbar"
-        }, {
-            "name": "天气",
-            "url": "demos/ui/weather"
-        }
-     ]
-    }
-   ]
+        "name": "月份",
+        "url": "demos/ui/month"
+    }, {
+        "name": "表单元素",
+        "url": "demos/forms/baseElements"
+    }, {
+        "name": "表单布局",
+        "url": "demos/forms/formLayout"
+    }, {
+        "name": "元素校验",
+        "url": "demos/forms/validate"
+    }, {
+        "name": "浏览态表单",
+        "url": "demos/forms/browse"
+    }, {
+        "name": "简单表格",
+        "url": "demos/tables/simple"
+    }, {
+        "name": "简单表格(DT)",
+        "url": "demos/tables/simple-dt"
+    }, {
+        "name": "固定表头表格",
+        "url": "demos/tables/fixedheader"
+    }, {
+        "name": "含有分页表格",
+        "url": "demos/tables/pagination"
+    }, {
+        "name": "主子表",
+        "url": "demos/tables/main-child"
+    }, {
+        "name": "左树右表",
+        "url": "demos/tables/tree-table"
+    }, {
+        "name": "卡片",
+        "url": "demos/ui/cards"
+    }, {
+        "name": "色带",
+        "url": "demos/ui/ribbon"
+    }, {
+        "name": "列表",
+        "url": "demos/ui/listgroup"
+    }, {
+        "name": "穿梭框",
+        "url": "demos/complex/transfer-dt"
+    }, {
+        "name": "高级搜索",
+        "url": "demos/complex/advsearch"
+    }, {
+        "name": "筛选栏",
+        "url": "demos/complex/filterBar"
+    }, {
+        "name": "导航条",
+        "url": "demos/ui/navbar"
+    }, {
+        "name": "天气",
+        "url": "demos/ui/weather"
+    }]
 }, {
     "name": "grid控件",
+    "index": "grid",
     "sub": [{
         "name": "基础grid",
         "url": "demos/grids/base"
@@ -205,6 +192,7 @@
     }]
 }, {
     "name": "布局",
+    "index": "buju",
     "sub": [{
         "name": "卡片式布局",
         "url": "demos/layouts/pageLayout"
@@ -229,13 +217,14 @@
     }]
 }, {
     "name": "kero",
+    "index": "kero",
     "sub": [{
         "name": "单选框",
         "url": "demos/kero/radio"
     }, {
         "name": "复选框",
         "url": "demos/kero/checkbox"
-    },{
+    }, {
         "name": "普通输入框",
         "url": "demos/kero/textfield"
     }, {
@@ -268,5 +257,6 @@
     }]
 }, {
     "name": "空页面",
-    "url": "demos/patterns/blank"
+    "url": "demos/patterns/blank",
+    "index": "kong"
 }]

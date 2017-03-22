@@ -282,7 +282,8 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 @media screen and (min-width: 1024px){
     .u-navlayout-fixed-drawer > .u-navlayout-content {
-        margin-left: 240px;
+        // margin-left: 240px;
+        margin-left: 0px;
     }
 }
 
@@ -411,7 +412,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 /*下载按钮*/
 .downBtn {
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 8px;
 }
 /*运行按钮*/
@@ -419,7 +420,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     position: absolute;
     right: 0px;
     top: 8px;
-    margin-right: 100px;
+    margin-right: 115px;
 }
 
 /*兼容手机端*/
@@ -451,4 +452,288 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 
 .demo-navigation .u-nav-link .uf {
     font-size: 12px;
+}
+
+
+
+/* 内容区 */
+
+.page-wrap {
+    position: relative;
+    padding: 0;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.boxes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.layout-top .boxes{
+    webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.layout-top .editor-parent {
+    width: 100%;
+    height: 350px;
+    min-height: 125px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.layout-top .resizer {
+    background: #343436;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 1px black;
+    height: 17px;
+    cursor: row-resize;
+    position: relative;
+    z-index: 10;
+}
+
+.output-container {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+}
+
+
+.layout-top .editor-parent .editor-resizer {
+    position: relative;
+    z-index: 2;
+    width: 20px;
+    cursor: col-resize;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(0,0,0,0.4);
+    // background: #343436;
+    background: #f1f1f1;
+}
+.layout-top .editor-resizer:first-child {
+    cursor:auto;
+}
+
+.editor-parent .box {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    // background: #1d1f20;
+    // width: calc((100% - 20px*3) / 3);
+    width: calc(100%/3);
+}
+
+.output-sizer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.result {
+    position: relative;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    // background: radial-gradient(circle, #484848, #2F3031);
+    height: 100%;
+}
+
+.powers {
+    background: rgb(236, 239, 241);
+    white-space: nowrap;
+    position: relative;
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.code-wrap {
+    min-width: 200px;
+    height: 100%;
+    height: calc(100% - 36px);
+    font-size:16px;
+}
+
+.box-title {
+    font-family: Sans-Serif;
+    font-weight: bold;
+    // color: #ccc;
+    margin: 0;
+    font-size: 1.3em;
+    display: inline-block;
+    padding-left: 2px;
+    vertical-align: middle;
+}
+
+
+/* 导航重新定义 */
+
+.header-navigation ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-navigation >ul >li {
+    display:inline-block;
+    padding-left:20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+
+.header-navigation >ul >li .u-nav-sub {
+    display: none;
+    position: absolute;
+    top: 33px;
+    z-index: 100;
+    width: 200px;
+    background: #FFF;
+    padding: 10px;
+    left: -100px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.header-navigation >ul >li .second-nav> li {
+    width: 49%;
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.header-navigation >ul >li .second-nav> li:hover{
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+.header-navigation ul li a {
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* 重置导航的垂直 */
+.u-tabs__tab-bar {
+    align-items: center;
+}
+
+
+.nav-sub-content {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 0px;
+    // border-top: 2px solid rgb(63,81,181);
+}
+
+
+
+
+.nav-sub-content ul {
+    display: none;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    background: #FFF;
+    padding: 10px;
+    // border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.nav-sub-content .nav-sub-li{
+
+    line-height: 35px;
+    cursor: pointer;
+    float: left;
+    margin: 0 15px 15px 15px;
+    border: 1px solid #E9E9E9;
+    background: #f8f8f8;
+    min-width: 110px;
+    height: 35px;
+    list-style-position: outside;
+    overflow: hidden;
+    transition: background 0.6s ease;
+    -webkit-transition: background 0.6s ease;
+    border-radius:3px;
+}
+
+.nav-sub-content li.nav-sub-li a {
+    font-size: 13px;
+    color: #333;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    padding: 0px 15px 0 15px;
+}
+.nav-sub-content .nav-sub-li:hover {
+    background:rgb(63,81,181);
+    
+}
+
+.nav-sub-content .nav-sub-li:hover a {
+    color: #FFF;
+}
+
+/*重新定义滚动条*/
+
+::-webkit-scrollbar {
+    width:5px;
+    // height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.8);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(100, 100, 100, 0.4);
+}
+
+
+.tinper-logo {
+    position: absolute;
+    left: 15px;
+    
+}
+
+.tinper-logo img {
+    height: 30px;
 }
