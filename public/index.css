@@ -731,6 +731,13 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 .tinper-logo {
     position: absolute;
     left: 15px;
+    text-decoration: none;
+    color: #45c007;
+    font-size: 20px;
+    vertical-align: bottom;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 600;
     
 }
 
