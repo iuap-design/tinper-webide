@@ -607,6 +607,14 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 
 
+
+@media (max-width: 991px) {
+    .header-navigation >ul >li {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+}
 .header-navigation >ul >li .u-nav-sub {
     display: none;
     position: absolute;
@@ -671,6 +679,8 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     overflow: hidden;
 }
 
+
+
 .nav-sub-content .nav-sub-li{
 
     line-height: 35px;
@@ -688,6 +698,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     border-radius:3px;
 }
 
+
 .nav-sub-content li.nav-sub-li a {
     font-size: 13px;
     color: #333;
@@ -697,6 +708,18 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     width: 100%;
     line-height: 40px;
     padding: 0px 15px 0 15px;
+}
+
+
+@media (max-width: 991px) {
+    .nav-sub-content .nav-sub-li {
+        min-width: 90px;
+    }
+
+    .nav-sub-content li.nav-sub-li a {
+        font-size:12px
+    }
+    
 }
 .nav-sub-content .nav-sub-li:hover {
     background:rgb(63,81,181);
@@ -741,6 +764,24 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     
 }
 
+@media (max-width: 768px) {
+    .tinper-logo {
+        font-size: 16px;
+    }
+    .header-navigation {
+        position: absolute;
+        right: 0px;
+    }
+}
+
 .tinper-logo img {
     height: 30px;
+}
+
+.btn-close {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    color: #8e8e8e;
 }

@@ -96,9 +96,13 @@
                     <i data-toggle="left" class="uf uf-arrow-left ">
                         </i>
                 </a> -->
-                <a class="tinper-logo" href="http://tinper.org">
+                <a class="tinper-logo hidden-xs" href="http://tinper.org">
                     <img src="../assets/static/img/tinperlogos60.png">
                     <span > —— IDE</span>
+                </a>
+                <a class="tinper-logo visible-xs-inline-block" href="http://tinper.org">
+                    
+                    <span > tinper—IDE</span>
                 </a>
                 <nav class="header-navigation" id="header-navigation">
                     <ul data-bind="foreach:{data: menuDT.rows(),as :'row'}">
@@ -126,7 +130,13 @@
                  <div class="nav-sub-content"  data-bind="foreach:{data: menuDT.rows(),as :'row'}">
                         <!-- url 为空 ，存在子菜单 -->
                         <!-- ko if:  !row.ref('url')() -->
+                        
                         <ul class="nav-sub-ul" data-bind="attr:{id:row.ref('index')()},foreach:{data: row.ref('sub'), as :'srow'}">
+                             <!-- ko if:  $index() ===0 -->
+                            <div class="btn-close uf uf-close visible-xs-inline-block">
+                            
+                            </div>
+                            <!-- /ko -->
                             <li class="nav-sub-li"> <a class="u-nav-link link-href" data-bind="attr:{href:'#/' + srow.ref('url')()}">
                                 <span class="demo-hidden-folded" data-bind="text:srow.ref('name')"></span>
                             </a></li>

@@ -193,6 +193,9 @@ var showSubNav = function(){
     $('.nav-sub-content').mouseleave(function(){
     	$(this).find('ul').hide();
     });
+    $('.btn-close').click(function(){
+    	 $('.nav-sub-content').find('ul').hide();
+    });
 }
 $(function(){
 
