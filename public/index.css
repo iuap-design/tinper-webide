@@ -758,8 +758,8 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     color: #45c007;
     font-size: 20px;
     vertical-align: bottom;
-    line-height: 40px;
-    height: 40px;
+    // line-height: 40px;
+    // height: 40px;
     font-weight: 600;
     
 }
@@ -767,6 +767,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 @media (max-width: 768px) {
     .tinper-logo {
         font-size: 16px;
+        left: 5px;
     }
     .header-navigation {
         position: absolute;
@@ -775,7 +776,8 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 
 .tinper-logo img {
-    height: 30px;
+    height: 36px;
+    vertical-align: bottom;
 }
 
 .btn-close {
