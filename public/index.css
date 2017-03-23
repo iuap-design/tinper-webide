@@ -706,7 +706,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    line-height: 40px;
+    // line-height: 40px;
     padding: 0px 15px 0 15px;
 }
 
