@@ -48,7 +48,7 @@ var viewModel = {
 		document.getElementById("script_code").value= scriptEditor.getValue();;
 		// validateForm();
 		document.getElementById("runForm").submit();
-		
+
 		//注释
 		// if (jump !== false){
 		// 	var tab = document.getElementById("codeTab")['u.Tabs'];
@@ -56,7 +56,7 @@ var viewModel = {
 		// }
 	},
 	download: function(){
-	
+
 		//将对应的css、js、html代码传给后端，并将后端返回的zip地址进行下载
 		$.ajax({
 				type:'post',
@@ -141,7 +141,7 @@ var routerFunc = function(row, subRow, ssRow, url){
 					viewModel.title(row.getValue('name'));
 					viewModel.currentRow = row;
 				}
-				
+
 			}
 			viewModel.currentUrl = url;
 			$.ajax({
@@ -178,7 +178,7 @@ var showSubNav = function(){
        var tabId = $(this).find('a').attr('index');
 
        //tabId不存在的话，隐藏所有的子菜单
-     
+
        //如果tabId存在，则显示子菜单内容。
        if (tabId) {
           if($(tabId).is( ":hidden" )){
@@ -206,7 +206,7 @@ $(function(){
 	window.htmlEditor.session.setMode("ace/mode/html");
 	window.cssEditor.session.setMode("ace/mode/css");
 	window.scriptEditor.session.setMode("ace/mode/javascript");
-	
+
 
 
 	window.htmlEditor.setTheme("ace/theme/tomorrow_night");
@@ -258,13 +258,19 @@ $(function(){
 					if(parurl){
 						router.on(parurl, routerFunc(row, null,null, parurl));
 					}
-					
+
 				}
 			}
 			router.init();
 			if(location.href.indexOf('#') == -1) {
 				location=location.href+$('.nav-sub-ul .u-nav-link').eq(0).attr('href');
 			}
+			$('.nav-sub-ul>.nav-sub-li').off('click').on('click',function(){
+				var $this = $(this);
+				$('.nav-sub-ul>.nav-sub-li').removeClass('active-li');
+				$this.addClass('active-li');
+
+			})
 			 $(".iscroll-improve").mCustomScrollbar({theme:"minimal-dark"});
 
 			 // showSecondNav();
@@ -273,4 +279,3 @@ $(function(){
 	})
 
 })
-

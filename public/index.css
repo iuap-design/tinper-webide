@@ -20,7 +20,14 @@ body {
     border-bottom: 1px solid #ECECEC;
     /*margin-bottom: 24px;*/
 }
-
+/*
+ * 重写u.css的样式，让下面展示的页面更紧凑一点
+ * by huyue
+ * date 2017-04-24
+ */
+.u-widget-bg{
+    padding: 0!important;
+}
 .main-wapper {
     background: #fff;
     width: 92%;
@@ -385,7 +392,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 
 // 重写样式
 .u-widget-title {
-    border-left: 4px solid red; 
+    border-left: 4px solid red;
 }
 
 @media screen and (max-width: 480px) {
@@ -431,7 +438,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     .downBtn {
         display: none;
     }
-    
+
 
 }
 
@@ -531,6 +538,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 
 .editor-parent .box {
+    font-size: 12px;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -613,7 +621,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
         padding-right: 5px;
         padding-left: 5px;
     }
-    
+
 }
 .header-navigation >ul >li .u-nav-sub {
     display: none;
@@ -719,14 +727,14 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     .nav-sub-content li.nav-sub-li a {
         font-size:12px
     }
-    
+
 }
-.nav-sub-content .nav-sub-li:hover {
+.nav-sub-content .nav-sub-li:hover,.nav-sub-content .nav-sub-li.active-li{
     background:rgb(63,81,181);
-    
+
 }
 
-.nav-sub-content .nav-sub-li:hover a {
+.nav-sub-content .nav-sub-li:hover a,.nav-sub-content .nav-sub-li.active-li a {
     color: #FFF;
 }
 
@@ -761,7 +769,7 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     // line-height: 40px;
     // height: 40px;
     font-weight: 600;
-    
+
 }
 
 @media (max-width: 768px) {

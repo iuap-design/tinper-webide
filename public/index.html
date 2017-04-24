@@ -35,7 +35,7 @@
 <body id="webIDE">
     <div class="u-navlayout  u-navlayout-fixed-drawer u-navlayout-fixed-header">
         <!-- 左侧导航 -->
-        
+
         <!-- 左侧导航 -->
         <!-- 内容 -->
         <!-- <main id="main-content" class="demo-content u-navlayout-content u-color-grey-100 ov-hide">
@@ -62,7 +62,7 @@
                     <button type="button" data-bind="click:run" class="u-button raised primary runBtn hidden-xs">运行</button>
                     <button type="button" data-bind="click:download" class="u-button raised primary downBtn hidden-xs">下载demo</button>
                 </div>
-                
+
                 <div class="u-tabs__panel is-active" id="tab-panel-1">
                     <div id="html_code_edit" style="width:100%;height:100%;font-size:16px;">
                     </div>
@@ -101,7 +101,7 @@
                     <span >— IDE</span>
                 </a>
                 <a class="tinper-logo visible-xs-inline-block" >
-                    
+
                     <span > tinper—IDE</span>
                 </a>
                 <nav class="header-navigation" id="header-navigation">
@@ -112,7 +112,7 @@
                             <a class="u-nav-link first-nav" data-bind="attr:{index:'#'+ row.ref('index')()}">
                                 <span class="demo-hidden-folded" data-bind=" text:row.ref('name')"></span>
                             </a>
-                            <!-- /ko -->  
+                            <!-- /ko -->
 
                              <!-- url不为空，添加链接 -->
                             <!-- ko if:  row.ref('url')() -->
@@ -123,18 +123,18 @@
 
                         </li>
                     </ul>
-                   
+
                 </nav>
                 <button type="button" data-bind="click:run" class="u-button raised primary runBtn hidden-xs">运行</button>
                 <button type="button" data-bind="click:download" class="u-button raised primary downBtn hidden-xs">下载demo</button>
                  <div class="nav-sub-content"  data-bind="foreach:{data: menuDT.rows(),as :'row'}">
                         <!-- url 为空 ，存在子菜单 -->
                         <!-- ko if:  !row.ref('url')() -->
-                        
+
                         <ul class="nav-sub-ul" data-bind="attr:{id:row.ref('index')()},foreach:{data: row.ref('sub'), as :'srow'}">
                              <!-- ko if:  $index() ===0 -->
                             <div class="btn-close uf uf-close visible-xs-inline-block">
-                            
+
                             </div>
                             <!-- /ko -->
                             <li class="nav-sub-li"> <a class="u-nav-link link-href" data-bind="attr:{href:'#/' + srow.ref('url')()}">
@@ -153,11 +153,11 @@
                         <div class="box box-html " >
                             <div class="powers">
                                  <h2 class="box-title">
-                                  HTML  
+                                  HTML
                                 </h2>
                             </div>
-                            <div class="code-wrap" id="html_code_edit" style="font-size: 14px">
-                               
+                            <div class="code-wrap" id="html_code_edit">
+
                             </div>
                         </div>
                        <!--  <div class="editor-resizer">
@@ -166,11 +166,11 @@
                         <div class="box box-css " >
                             <div class="powers">
                                  <h2 class="box-title">
-                                  CSS  
+                                  CSS
                                 </h2>
                             </div>
-                            <div class="code-wrap" id="css_code_edit" style="font-size: 14px">
-                               
+                            <div class="code-wrap" id="css_code_edit">
+
                             </div>
                         </div>
                        <!--  <div class="editor-resizer">
@@ -179,16 +179,16 @@
                         <div class="box box-js " >
                             <div class="powers">
                                  <h2 class="box-title">
-                                  JS  
+                                  JS
                                 </h2>
                             </div>
-                            <div class="code-wrap" id="script_code_edit" style="font-size: 14px">
-                               
+                            <div class="code-wrap" id="script_code_edit">
+
                             </div>
                         </div>
                     </div>
                     <!-- <div class="resizer">
-                        
+
                     </div> -->
                     <div class="output-container">
                         <div class="output-sizer">
@@ -199,14 +199,14 @@
                     </div>
                 </div>
             </div>
-            
+
         </main>
     </div>
     <script src="//design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>
     <script src="/assets/vendor/underscore/underscore.js"></script>
     <script type="text/javascript" src="//design.yyuap.com/static/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/assets/vendor/ace/ace.js"></script>
-      
+
     <script src="/assets/vendor/director/director.js"></script>
     <script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
     <script src="//design.yyuap.com/static/uui/latest/js/u-polyfill.min.js"></script>
