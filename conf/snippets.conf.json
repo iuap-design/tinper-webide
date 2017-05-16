@@ -175,6 +175,9 @@
         "name": "合计",
         "url": "demos/grids/sumRow"
     }, {
+        "name": "分组",
+        "url": "demos/grids/group"
+    }, {
         "name": "交换列",
         "url": "demos/grids/swap"
     }, {
