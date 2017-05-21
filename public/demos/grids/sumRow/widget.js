@@ -21,15 +21,7 @@ viewModel = {
           "name": "赵四",
           "time": "2016-05-16",
           "distance": "25",
-          "currency": {
-            "value": "200.00",
-            "meta": {
-              "precision": "2",
-              "max": "3000",
-              "min": "0",
-              "curSymbol": "$"
-            }
-          }
+          "currency": "200.00"
         }
       }, {
         "status": "nrm",
@@ -37,15 +29,7 @@ viewModel = {
           "name": "王一",
           "time": "2016-05-12",
           "distance": "25",
-          "currency": {
-            "value": "200.00",
-            "meta": {
-              "precision": "2",
-              "max": "3000",
-              "min": "0",
-              "curSymbol": "$"
-            }
-          }
+          "currency": "200.00"
         }
       }, {
         "status": "nrm",
@@ -53,15 +37,7 @@ viewModel = {
           "name": "李三",
           "time": "2016-11-16",
           "distance": "50",
-          "currency": {
-            "value": "300.00",
-            "meta": {
-              "precision": "2",
-              "max": "3000",
-              "min": "0",
-              "curSymbol": "$"
-            }
-          }
+          "currency": "300.00"
         }
       }, {
         "status": "nrm",
@@ -69,15 +45,7 @@ viewModel = {
           "name": "彰武",
           "time": "2012-05-16",
           "distance": "50",
-          "currency": {
-            "value": "300.00",
-            "meta": {
-              "precision": "2",
-              "max": "3000",
-              "min": "0",
-              "curSymbol": "$"
-            }
-          }
+          "currency": "300.00"
         }
       }
     ]

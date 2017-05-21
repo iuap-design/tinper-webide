@@ -7,8 +7,9 @@ var serve = require('koa-static');
 var koaBody = require('koa-body');
 var gzip = require('koa-gzip');
 
+
 var app = koa();
-var routes = require('./routes');
+var routes = require('./routes/index.js');
 
 routes.setRouters(router, '.');
 
@@ -31,8 +32,9 @@ app.use(function *(next){
   }
 });
 
-app.use(serve(path.join(__dirname, './public')));
+// app.use(serve(path.join(__dirname, './public')));
+app.use(serve(path.join(__dirname, '')));
 
-app.listen( 8000 );
+app.listen( 8070 );
 
-console.log('server started at http://localhost:8000');
+console.log('server started at http://localhost:8070');

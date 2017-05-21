@@ -1,19 +1,27 @@
-.u-widget-body.height div{
+.u-widget-body .center-block div{
 	width: 50px;
-	margin:0px 15px;
+	/*margin:0px 15px;*/
     border:solid 1px #afa7a7;
     background:#ccceb9;
     display:inline-block;
 }
 
-.u-widget-body.width div{
+.u-widget-body .u-width-style div{
 	height:50px;
-	margin:0px 15px;
+	margin:0px 15px 50px;
     border:solid 1px #afa7a7;
     background:#ccceb9;
-    display:inline-block;
+    position: relative;
+    margin-top: 50px;
+    /*display:inline-block;*/
+
 }
 
+
+.u-width-style{
+    width:70%;
+    margin:0 auto;
+}
 .u-widget-body p{
 	margin-top: -10px;
 	margin-bottom: 30px;
@@ -21,10 +29,93 @@
 
 .desc{
     position:absolute;
-    bottom:0px;
+    bottom:-30px;
     font-size:12px;
 
 }
 .bg-f5{
 	background-color: #f5f5f5;
+}
+.vertical-align-bottom{
+     vertical-align: bottom;
+ }
+.vertical-align-top{
+    vertical-align: top;
+}
+.text-justify span{
+    display: inline-block /* Opera */;
+    padding-left: 100%;
+}
+.margin-bottom-12{
+    margin-bottom: 12px;
+}
+.height{
+    margin-bottom: 50px;
+}
+.height div{
+    position: relative;
+    margin-top: 50px;
+}
+.width div{
+    position: relative;
+}
+.width{
+    margin: 0 -30px;
+}
+.width .desc{
+    bottom: -30px;
+    width: 50px;
+}
+
+.u-padding-left-10{
+    padding-left: 10px;
+}
+.center-block-wdith{
+    width:70%
+}
+.u-padding-left-3{
+    padding-left: 10px;
+}
+@media (max-width: 767px){
+    .u-fontSize-adaption{
+        font-size:12px;
+    }
+    .u-row-width-padding{
+        padding-left:0;
+        padding-right:0
+    }
+    .u-widget-body .u-width-style div{
+        margin: 0px 15px 50px 0 ;
+    }
+    .u-vertical-padding-5{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .u-padding-left-3{
+        padding-left: 3px;
+    }
+    .center-block-wdith{
+        width:100%;
+        margin:0 auto
+    }
+    .u-width-style{
+        width:100%;
+        margin:0 auto;
+    }
+    .u-padding-left-3>.u-button {
+        min-width:80%;
+    }
+    .u-padding-left-25{
+      padding-left: 25px;
+    }
+    .u-mobile-font-12{
+        font-size: 12px;
+    }
+}
+
+.list-style-none{
+    list-style: none;
+}
+.u-table-width-style{
+    width:20%;
 }

@@ -4,6 +4,9 @@ var codeSource = document.querySelector('#code-source');
 var params = location.href.match(/\?.*cv=(\w*)($|&)/), cv='dt';
 if(params) cv = params[1]
 
+if(u.isMobile||u.isIPAD||u.isAndroidPAD){
+	$('#main-content').removeClass('ov-hide').addClass('mob-ovx-auto');
+}
 
 var app;
 var viewModel = {
@@ -45,10 +48,12 @@ var viewModel = {
 		document.getElementById("script_code").value= scriptEditor.getValue();;
 		// validateForm();
 		document.getElementById("runForm").submit();
-		if (jump !== false){
-			var tab = document.getElementById("codeTab")['u.Tabs'];
-			tab.show('tab-panel-4');
-		}
+
+		//注释
+		// if (jump !== false){
+		// 	var tab = document.getElementById("codeTab")['u.Tabs'];
+		// 	tab.show('tab-panel-4');
+		// }
 	},
 	download: function(){
 
@@ -76,9 +81,9 @@ var viewModel = {
 				url:'/getWidgets',
 				data:{wUrl:viewModel.currentUrl+ '/dt'},
 				success:function(data){
-					window.htmlEditor.setValue(data.html);
-					window.cssEditor.setValue(data.css);
-					window.scriptEditor.setValue(data.script);
+					window.htmlEditor.setValue(data.html,-1);
+					window.cssEditor.setValue(data.css,-1);
+					window.scriptEditor.setValue(data.script,-1);
 					viewModel.run(false);
 				}
 			})
@@ -144,9 +149,9 @@ var routerFunc = function(row, subRow, ssRow, url){
 				url:'/getWidgets',
 				data:{wUrl:url},
 				success:function(data){
-					window.htmlEditor.setValue(data.html);
-					window.cssEditor.setValue(data.css);
-					window.scriptEditor.setValue(data.script);
+					window.htmlEditor.setValue(data.html,-1);
+					window.cssEditor.setValue(data.css,-1);
+					window.scriptEditor.setValue(data.script,-1);
 					viewModel.run(true);
 				}
 			})
@@ -164,21 +169,53 @@ var resizeEditor = function(){
 	$('#tab-panel-2').css('height',editorHeight);
 	$('#tab-panel-3').css('height',editorHeight);
 	$('#tab-panel-4').css('height',editorHeight);
+
+	$('#codeContainer').css('height',editorHeight);
 }
 
+var showSubNav = function(){
+	$('.header-navigation li').mouseenter(function(){
+       var tabId = $(this).find('a').attr('index');
+
+       //tabId不存在的话，隐藏所有的子菜单
+
+       //如果tabId存在，则显示子菜单内容。
+       if (tabId) {
+          if($(tabId).is( ":hidden" )){
+          	$('.nav-sub-content ul').hide();
+            $(tabId).slideDown();
+          }
+       }else{
+          $('.nav-sub-content ul').hide();
+       }
+    });
+
+    $('.nav-sub-content').mouseleave(function(){
+    	$(this).find('ul').hide();
+    });
+    $('.btn-close').click(function(){
+    	 $('.nav-sub-content').find('ul').hide();
+    });
+}
 $(function(){
+
+	//注释
 	window.htmlEditor = ace.edit("html_code_edit");
 	window.cssEditor = ace.edit("css_code_edit");
 	window.scriptEditor = ace.edit("script_code_edit");
 	window.htmlEditor.session.setMode("ace/mode/html");
 	window.cssEditor.session.setMode("ace/mode/css");
 	window.scriptEditor.session.setMode("ace/mode/javascript");
-	// window.htmlEditor.setTheme("ace/theme/github");
-	// window.cssEditor.setTheme("ace/theme/github");
-	// window.scriptEditor.setTheme("ace/theme/github");
-	window.htmlEditor.setTheme("ace/theme/xcode");
-	window.cssEditor.setTheme("ace/theme/xcode");
-	window.scriptEditor.setTheme("ace/theme/xcode");
+
+
+
+	window.htmlEditor.setTheme("ace/theme/tomorrow_night");
+	window.cssEditor.setTheme("ace/theme/tomorrow_night");
+	window.scriptEditor.setTheme("ace/theme/tomorrow_night");
+	// 注释
+	// window.htmlEditor.setTheme("ace/theme/xcode");
+	// window.cssEditor.setTheme("ace/theme/xcode");
+	// window.scriptEditor.setTheme("ace/theme/xcode");
 	resizeEditor();
 	$(window).on('resize', function(){
 		resizeEditor();
@@ -226,26 +263,19 @@ $(function(){
 			}
 			router.init();
 			if(location.href.indexOf('#') == -1) {
-				location=location.href+$('.u-nav-link-current').eq(0).attr('href');
+				location=location.href+$('.nav-sub-ul .u-nav-link').eq(0).attr('href');
 			}
+			$('.nav-sub-ul>.nav-sub-li').off('click').on('click',function(){
+				var $this = $(this);
+				$('.nav-sub-ul>.nav-sub-li').removeClass('active-li');
+				$this.addClass('active-li');
+
+			})
 			 $(".iscroll-improve").mCustomScrollbar({theme:"minimal-dark"});
+
+			 // showSecondNav();
+			 showSubNav();
 		}
 	})
 
-})
-
-
-$('.u-tabs__tab').each(function () {
-	$(this).bind('click', function () {
-		console.log(111);
-		if($(this).attr('href') !== '#tab-panel-4') {
-			$('#viewRun').show();
-		} else {
-			$('#viewRun').hide();
-		}
-	})
-});
-
-$('#viewRun').bind('click', function () {
-	$(this).hide();
 })

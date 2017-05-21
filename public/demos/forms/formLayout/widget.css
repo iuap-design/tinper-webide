@@ -1,20 +1,3 @@
-/*.u-form-group h4{
-	line-height: 0px;
-    font-weight: normal;
-}
-.margin-bottom-30{
-	margin-bottom: 30px;
-}
-.margin-bottom-15{
-	margin-bottom: 15px;
-}
-
-.u-form-group{
-    margin-right: 0;
-}
-.u-form-control{
-    border: 1px solid #E4EAEC;
-}*/
 .u-form-label{
     line-height: 35px;
     text-align: right;
@@ -36,7 +19,7 @@
     line-height: 1.3333333;
     border-radius: 4px;
 }
-..u-form-group-sm .u-form-label {
+.u-form-group-sm .u-form-label {
     padding-top: 7px;
     font-size: 12px;
 }

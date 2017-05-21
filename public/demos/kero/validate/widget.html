@@ -1,23 +1,53 @@
-<div class="u-container-fluid u-widget-bg">
-    <div class="u-row">
-        <div class="u-col-md-6">
-            <div class="u-widget  u-widget-right">
-                <div class="u-widget-heading">
-                    <h3 class="u-widget-title">默认校验</h3>
+<div class="u-widget u-widget-right">
+    <div class="u-widget-title">表格校验</div>
+    <div class="u-widget-body">
+        <div type="text" id="dicttype"
+             u-meta='{"id":"grid_dicttype","data":"dictTypeDa","type":"grid","editable":true,"multiSelect":true,"editType":"default","columnWidth":"150px"}'>
+            <div options='{"field":"dictTypeCode","dataType":"String","title":"编码","editType":"string","editOptions":{"validType":"string","required":true}}'></div>
+            <div options='{"field":"dictTypeName","dataType":"String","title":"名称","editType":"string","editOptions":{"validType":"string","required":true}}'></div>
+            <div options='{"field":"remark","dataType":"String","title":"备注","editType":"string"}'></div>
+            <div options='{"field":"creator","dataType":"String","title":"创建人","editType":"string"}'></div>
+            <div options='{"field":"createTime","dataType":"date","title":"创建时间","editType":"date"}'></div>
+        </div>
+    </div>
+</div>
+
+<div class="u-widget  u-widget-right margin-top-30">
+    <div class="u-widget-title">表单校验</div>
+    <div class="u-widget-body ">
+        <div class=" u-row ">
+            <div class="u-col-2 ">
+                <label for="code" class="u-input-label right">系统编码:</label>
+            </div>
+            <div class="u-col-4 ">
+                <div class="u-input-group-before padding-left-10 "
+                     style="color: red;">*
                 </div>
-                <div class="u-widget-body">
-                    <input type="text" class="u-form-control" id="float1" placeholder="字符串长度大于3小于8"   u-meta='{"id":"f1field","type":"string","data":"dt1","field":"f1"}'>
+                <input type="text" id="code" class="u-form-control padding-left-15"
+                       u-meta='{"type":"string","data":"dt1","field":"code"}'
+                       placeholder="系统编码不能为空">
+            </div>
+            <div class="u-col-2 ">
+                <label class="u-input-label right">系统名称:</label>
+            </div>
+            <div class="u-col-4 ">
+                <div class="u-input-group-before padding-left-10 "
+                     style="color: red;">*
                 </div>
+                <input type="text" id="name" class="u-form-control padding-left-15"
+                       u-meta='{"type":"string","data":"dt1","field":"name"}'
+                       placeholder="字符串长度大于3小于8">
             </div>
         </div>
-        <div class="u-col-md-6">
-            <div class="u-widget  u-widget-right">
-                <div class="u-widget-heading">
-                    <h3 class="u-widget-title">自定义校验</h3>
-                </div>
-                <div class="u-widget-body">
-                    <input type="text" class="u-form-control" id="float1" placeholder="字符串长度大于3小于8"   u-meta='{"id":"f2field","type":"string","data":"dt1","field":"f2"}'>
-                </div>
+        <!--第二行-->
+        <div class="u-row margin-top-25">
+            <div class="u-col-2 ">
+                <label class="u-input-label right">网关地址:</label>
+            </div>
+            <div class="u-col-4 ">
+                <input type="text" id="gateway" class="u-form-control"
+                       u-meta='{"id":"gateway","type":"string","data":"dt1","field":"gateway"}'
+                       placeholder="网关地址">
             </div>
         </div>
     </div>

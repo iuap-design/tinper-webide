@@ -4,14 +4,14 @@ var app, viewModel, basicDatas, computes, events;
 
 basicDatas = {
     srcListData: new u.DataTable({
-        meta: {
+        meta: { 
             field1: {
                 type: 'string'
             }
         }
     }),
     destListData: new u.DataTable({
-        meta: {
+        meta: { 
             field1: {
                 type: 'string'
             }
@@ -21,7 +21,7 @@ basicDatas = {
 };
 
 computes = {
-
+    
 }
 
 events = {
@@ -51,14 +51,13 @@ events = {
         viewModel.destListData.clear();
     },
     leftSelAll: function() {
-
+        
         viewModel.srcListData.toggleAllSelect()
     },
     rightSelAll: function() {
 
         viewModel.destListData.toggleAllSelect()
     }
-
 
 }
 
@@ -119,9 +118,10 @@ var init = function() {
         el: '.demo',
         model: viewModel
     })
-
+    
     getInitData()
-
+    
 }
 
 init()
+

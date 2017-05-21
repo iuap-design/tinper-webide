@@ -1,36 +1,44 @@
 <div class="u-container-fluid u-widget-bg">
     <div class="u-row">
-        <div class="u-col-md-4">
+        <div class="u-col-md-6">
             <div class="u-widget  u-widget-right">
                 <div class="u-widget-heading">
                     <h3 class="u-widget-title">基本开关</h3>
                 </div>
                 <div class="u-widget-body">
-                    <label class="u-switch u-switch-info margin-bottom-10" for="switch-info-unchecked">
+                    <p class="margin-top-0">未选</p>
+                    <label class="u-switch u-switch-primary  margin-bottom-10" for="switch-info-unchecked">
                         <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
                         <span class="u-switch-label"></span>
                     </label>
-                    <label class="u-switch u-switch-info margin-bottom-10" for="switch-info-checked">
+
+                    <p>已选</p>
+                    <label class="u-switch u-switch-primary  margin-bottom-10" for="switch-info-checked">
                         <input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
                         <span class="u-switch-label"></span>
                     </label>
-                    <label class="u-switch u-switch-info margin-bottom-10" for="switch-info-disable">
+
+                    <p>不可用未选</p>
+                    <label class="u-switch u-switch-primary  margin-bottom-10" for="switch-info-disable">
                         <input type="checkbox" id="switch-info-disable" class="u-switch-input" disabled>
                         <span class="u-switch-label"></span>
                     </label>
-                    <label class="u-switch u-switch-info margin-bottom-10" for="switch-info-checkdisalbed">
+
+                    <p>不可用已选</p>
+                    <label class="u-switch u-switch-primary margin-bottom-10" for="switch-info-checkdisalbed">
                         <input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
                         <span class="u-switch-label"></span>
                     </label>
                 </div>
             </div>
         </div>
-        <div class="u-col-md-4">
+        <div class="u-col-md-6">
             <div class="u-widget  u-widget-right">
                 <div class="u-widget-heading">
                     <h3 class="u-widget-title">多彩开关</h3>
                 </div>
                 <div class="u-widget-body">
+                    <p class="margin-top-0">.u-switch-primary(success/info/warning/danger/dark)</p>
                     <label class="u-switch u-switch-primary margin-bottom-10" for="switch-primary">
                         <input type="checkbox" id="switch-primary" class="u-switch-input" checked="true">
                         <span class="u-switch-label"></span>
@@ -58,18 +66,21 @@
                 </div>
             </div>
         </div>
-        <div class="u-col-md-4">
+    </div>
+    <div class="u-row">
+        <div class="u-col-md-6">
             <div class="u-widget  u-widget-right">
                 <div class="u-widget-heading">
                     <h3 class="u-widget-title">不同尺寸开关</h3>
                 </div>
                 <div class="u-widget-body">
-                    
+                    <p class="margin-top-0">.u-switch-lg(default/sm)</p>
                     <label class="u-switch u-switch-primary u-switch-lg margin-bottom-20" for="switch-primary-lg">
                         <input type="checkbox" id="switch-primary-lg" class="u-switch-input" checked="true">
                         <span class="u-switch-label"></span>
                     </label>
-                    <label class="u-switch u-switch-primary u-switch-default margin-bottom-10" for="switch-primary-default">
+                    <label class="u-switch u-switch-primary u-switch-default margin-bottom-10"
+                           for="switch-primary-default">
                         <input type="checkbox" id="switch-primary-default" class="u-switch-input" checked="true">
                         <span class="u-switch-label"></span>
                     </label>
@@ -77,7 +88,6 @@
                         <input type="checkbox" id="switch-primary-sm" class="u-switch-input" checked="true">
                         <span class="u-switch-label"></span>
                     </label>
-
                 </div>
             </div>
         </div>

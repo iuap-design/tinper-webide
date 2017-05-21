@@ -1,37 +1,49 @@
 <div class="u-container-fluid u-widget-bg">
     <div class="u-row">
-        <div class="u-col-md-12">
+        <div class="u-col-md-6">
             <div class="u-widget  u-widget-right">
                 <div class="u-widget-heading">
                     <h3 class="u-widget-title">基础radio</h3>
                 </div>
                 <div class="u-widget-body">
-                    <span>可用未选radio：</span>
-                    <label class="u-radio" for="option-1">
-                        <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
-                        <span class="u-radio-label">First</span>
-                    </label>
-                    <span>可用已选radio：</span>
-                    <label class="u-radio" for="option-6">
-                        <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
-                        <span class="u-radio-label">First</span>
-                    </label>
-                    <span>不可用未选radio：</span>
-                    <label class="u-radio" for="option-2">
-                        <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
-                        <span class="u-radio-label">Second</span>
-                    </label>
-                    <span>不可用已选radio：</span>
-                    <label class="u-radio" for="option-3">
-                        <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
-                        <span class="u-radio-label">Second</span>
-                    </label>
+                     <div class="margin-bottom-20">
+                        <p class="margin-top-0">可用：</p>
+                        <u-row class="clearfix">
+                            <div class="u-col-md-3">
+                                <label class="u-radio" for="option-1">
+                                    <input type="radio" id="option-1" class="u-radio-button" name="options" value="1" checked>
+                                    <span class="u-radio-label">男</span>
+                                </label>
+                             </div>
+                            <div class="u-col-md-3">
+                                <label class="u-radio" for="option-6">
+                                    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" >
+                                    <span class="u-radio-label">女</span>
+                                </label>
+                            </div>
+                        </u-row>
+                     </div>
+                     <div>
+                          <p>不可用：</p>
+                        <u-row class="clearfix">
+                            <div class="u-col-md-3">
+                                <label class="u-radio" for="option-2">
+                                    <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
+                                    <span class="u-radio-label">男</span>
+                                </label>
+                            </div>
+                            <div class="u-col-md-3">
+                                <label class="u-radio" for="option-3">
+                                    <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
+                                    <span class="u-radio-label">女</span>
+                                </label>
+                            </div>
+                        </u-row>
+                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="u-row">
-        <div class="u-col-md-12">
+        <div class="u-col-md-6">
             <div class="u-widget  u-widget-right">
                 <div class="u-widget-heading">
                     <h3 class="u-widget-title">不同色彩radio</h3>

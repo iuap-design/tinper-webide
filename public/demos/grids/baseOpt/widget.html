@@ -1,0 +1,75 @@
+<div class="u-container-fluid u-widget-bg">
+        <div class="u-row">
+            <div class="u-col-md-12">
+                <div class="u-widget  u-widget-right">
+                    <div class="u-widget-heading">
+                        <h3 class="u-widget-title">基础grid</h3>
+                    </div>
+                    <div class="u-widget-body">
+                        <button class="u-button u-button-border addbtn" data-bind="click: beforeEdit.bind($data,-1)">+ 添加</button>
+                        <div id="gridTest" u-meta='{"id":"grid","type":"grid","data":"listDataTable","columnMenu":false,"canDrag":false,"sortable":false,"canSwap":false}'>
+                            <div options='{"field":"name","dataType":"String","title":"姓名"}'></div>
+                            <div options='{"field":"time","dataType":"date","title":"日期","renderType":"dateRender","format":"YYYY-MM-DD","editType":"date"}'></div>
+                            <div options='{"field":"distance","dataType":"String","title":"距离"}'></div>
+                            <div options='{"field":"currency","dataType":"String","title":"金额"}'></div>
+                            <div options='{"field":"operate","dataType":"String","title":"操作","renderType":"optFun","editable":false}'></div>
+                        </div>
+                        <div id="dialog_content" style="display:none;">
+                            <div class="u-msg-title">
+                                <h4>基本信息</h4>
+                            </div>
+                            <div class="u-msg-content">
+                                <div class=" u-row ">
+                                    <div class="u-col-2 ">
+                                        <label for="code" class="u-input-label right">姓名:</label>
+                                    </div>
+                                    <div class="u-col-4 ">
+                                        <div class="u-input-group-before padding-left-10 " style="color: red;">*
+                                        </div>
+                                        <div u-meta='{"id":"name","type":"u-text","data":"formDataTable","field":"name"}'>
+                                            <input type="text" class="u-form-control padding-left-20" placeholder="姓名不能为空">
+                                        </div>
+                                    </div>
+                                    <div class="u-col-2 right-col">
+                                        <label class="u-input-label right">日期:</label>
+                                    </div>
+                                    <div class="u-col-4 ">
+                                        <div class="u-input-group-before padding-left-10 " style="color: red;">*
+                                        </div>
+                                        <div u-meta='{"id":"time","type":"u-date","data":"formDataTable","field":"time"}'>
+                                            <input type="text" class="u-form-control padding-left-20" placeholder="日期不能为空">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--第二行-->
+                                <div class="u-row margin-top-20">
+                                    <div class="u-col-2 ">
+                                        <label class="u-input-label right">距离:</label>
+                                    </div>
+                                    <div class="u-col-4 ">
+                                        <div u-meta='{"id":"distance","type":"u-text","data":"formDataTable","field":"distance"}'>
+                                            <input type="text" class="u-form-control padding-left-20" placeholder="距离">
+                                        </div>
+                                    </div>
+                                    <div class="u-col-2 ">
+                                        <label class="u-input-label right">金额:</label>
+                                    </div>
+                                    <div class="u-col-4 ">
+                                        <div u-meta='{"id":"currency","type":"currency","data":"formDataTable","field":"currency"}'>
+                                            <input type="text" class="u-form-control padding-left-20" placeholder="金额">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-msg-footer">
+                                <button class="u-msg-ok u-button primary">保存<span class="u-button-container"><span class="u-ripple"></span></span>
+                                </button>
+                                <button class="u-msg-cancel u-button  u-grey">取消<span class="u-button-container"><span class="u-ripple"></span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

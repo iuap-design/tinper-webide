@@ -53,12 +53,12 @@
         u.showMessage({msg:rightInfo,position:"center",msgType:"success"})
     })
 
-    var errorInfo='<i class="uf uf-crossmarkonablackcirclebackground margin-r-5"></i>错误信息!!!'
+    var errorInfo='<i class="uf uf-close-c margin-r-5"></i>错误信息!!!'
     u.on(errorBtn,'click', function(){
         u.showMessage({msg:errorInfo,position:"center",msgType:"error"})
     })
 
-    var warningInfo='<i class="uf uf-exclamationsign margin-r-5"></i>警告信息!!!';
+    var warningInfo='<i class="uf uf-exc-t-o margin-r-5"></i>警告信息!!!';
     u.on(warnBtn,'click', function(){
         u.showMessage({msg:warningInfo,position:"center",msgType:"warning"})
     })

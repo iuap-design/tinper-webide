@@ -106,6 +106,10 @@
     cursor: pointer;
     opacity: 0;
 }
+/*SEARCH的关闭图标字体大小*/
+.u-form-control-feedback .uf-close{
+    font-size:12px;
+}
 /*需要删除 测试完后再删除*/
 
 /*.u-form-control.round{
@@ -168,7 +172,7 @@
 .u-input-icon-left + .u-form-control{
 	padding-left: 30px;
 }
-.u-input-search .uf-removesymbol:hover{
+.u-input-search .uf-close:hover{
 	color: #7C7A7A;
 }
 .u-input-sm {

@@ -1,4 +1,11 @@
 .u-tabs-pill .u-tabs__tab.is-active{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+ .u-vertical .u-tabs__tab.is-active{
+     border-top-left-radius: 10px;
+     border-top-right-radius:0;
+ }
+.u-overflow{
+    overflow: hidden;
 }
