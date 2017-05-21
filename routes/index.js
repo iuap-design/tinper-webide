@@ -21,9 +21,13 @@ module.exports = {
         this.body = demos;//JSON.stringify('test');
     });
 
-    var getTpl = function(styles,htmls,scripts){
+    var getTpl = function(styles,htmls,scripts,type){
 
-     var ctxPath='//design.yonyoucloud.com/static/uui/latest';
+     var ctxPath='//design.yonyoucloud.com/static';
+     if(type == 'down'){
+       ctxPath='http://design.yonyoucloud.com/static';
+     }
+     var uuiCtxPath = ctxPath + '/uui/latest';
     //    var ctxPath='/dist/vendor/uui';
       var tpl = [
         '<!DOCTYPE html>',
@@ -32,25 +36,25 @@ module.exports = {
         '<meta charset="UTF-8">',
         '<meta name="viewport" content="width=device-width, initial-scale=1">',
         '<title>Title</title>',
-        '<link rel="stylesheet" href="//design.yonyoucloud.com/static/uploader/css/webuploader.css">',
-        '<link rel="stylesheet" href="'+ ctxPath +'/css/font-awesome.css">',
-        '<link rel="stylesheet" type="text/css" href="'+ ctxPath +'/css/u.css">',
-        '<link rel="stylesheet" type="text/css" href="'+ ctxPath +'/css/tree.css">',
-        '<link rel="stylesheet" type="text/css" href="'+ ctxPath +'/css/grid.css">',
+        '<link rel="stylesheet" href="' + ctxPath + '/uploader/css/webuploader.css">',
+        '<link rel="stylesheet" href="'+ uuiCtxPath +'/css/font-awesome.css">',
+        '<link rel="stylesheet" type="text/css" href="'+ uuiCtxPath +'/css/u.css">',
+        '<link rel="stylesheet" type="text/css" href="'+ uuiCtxPath +'/css/tree.css">',
+        '<link rel="stylesheet" type="text/css" href="'+ uuiCtxPath +'/css/grid.css">',
         '<style id="demo-style" media="screen">',
         styles,
         '</style>',
         '</head>',
         '<body style="background-color: #eceff1;margin-left: 20px;width: calc(100% - 20px );">',
         htmls,
-        '<script src="//design.yonyoucloud.com/static/jquery/jquery-1.11.2.js"></script>',
-        '<script src="//design.yonyoucloud.com/static/uploader/js/webuploader.js"></script>',
-        '<script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>',
-        '<script src="'+ ctxPath +'/js/u-polyfill.js"></script>',
-        '<script src="'+ ctxPath +'/js/u.js"></script>',
-        '<script src="'+ ctxPath +'/js/u-tree.js"></script>',
-        '<script src="'+ ctxPath +'/js/u-grid.js"></script>',
-        '<script src="//design.yonyoucloud.com/static/requirejs/require.debug.js"></script>',
+        '<script src="' + ctxPath + '/jquery/jquery-1.11.2.js"></script>',
+        '<script src="' + ctxPath + '/uploader/js/webuploader.js"></script>',
+        '<script src="' + ctxPath + '/knockout/knockout-3.2.0.debug.js"></script>',
+        '<script src="'+ uuiCtxPath +'/js/u-polyfill.js"></script>',
+        '<script src="'+ uuiCtxPath +'/js/u.js"></script>',
+        '<script src="'+ uuiCtxPath +'/js/u-tree.js"></script>',
+        '<script src="'+ uuiCtxPath +'/js/u-grid.js"></script>',
+        '<script src="' + ctxPath + '/requirejs/require.debug.js"></script>',
         '<script>',
         scripts,
         '</script>',
@@ -126,7 +130,7 @@ module.exports = {
       var htmls = data.htmlCode;
       var scripts = data.jsCode;
 
-      var tpl = getTpl(styles,htmls,scripts);
+      var tpl = getTpl(styles,htmls,scripts,'down');
       viewCode = tpl.join('\r\n');
 
       yield function(cb) {
