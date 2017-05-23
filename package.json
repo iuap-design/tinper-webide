@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "port": "lsof -i tcp:8090",
     "start": "node app.js"
   },
   "repository": {
