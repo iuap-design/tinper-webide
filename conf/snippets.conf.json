@@ -140,6 +140,9 @@
     }, {
         "name": "天气",
         "url": "demos/ui/weather"
+    }, {
+        "name": "地址级联",
+        "url": "demos/ui/cascader"
     }]
 }, {
     "name": "grid控件",
@@ -257,6 +260,9 @@
     }, {
         "name": "树",
         "url": "demos/kero/tree-dt"
+    }, {
+        "name": "地址级联",
+        "url": "demos/kero/cascader"
     }]
 }, {
     "name": "空页面",
