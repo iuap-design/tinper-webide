@@ -27,8 +27,8 @@ module.exports = {
      if(type == 'down'){
        ctxPath='http://design.yonyoucloud.com/static';
      }
-    //  var uuiCtxPath = ctxPath + '/uui/latest';
-       var uuiCtxPath='/dist/vendor/uui';
+     var uuiCtxPath = ctxPath + '/uui/latest';
+    //    var uuiCtxPath='/dist/vendor/uui';
       var tpl = [
         '<!DOCTYPE html>',
         '<html lang="en">',
