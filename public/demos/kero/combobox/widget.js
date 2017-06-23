@@ -34,7 +34,7 @@ app = u.createApp({
  */
 var combo1Data = [{name:'cc1',value:'13'},{name:'dd1',value:'14'}];
 //设置多选下拉框的数据源
-app.getComp('mutil').comp.setComboData(combo1Data);
+app.getComp('mutil').setComboData(combo1Data);
 
 // 创建空行，设置默认值
 var r = viewModel.dt1.createEmptyRow();
