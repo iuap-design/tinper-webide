@@ -1,12 +1,12 @@
 var uploader = WebUploader.create({
     // swf文件路径
-    swf: '/dist/vendor/uploader/swf/Uploader.swf?v=' + Math.random(),
+    swf: '/webide/dist/vendor/uploader/swf/Uploader.swf?v=' + Math.random(),
 
     // 文件接收服务端。
-    server: '/upload',
+    server: '/webide/upload',
 
     // 选择文件的按钮。可选。
-    pick: '.uploader',
+    pick: '#upload',
 
     // 是否开启自动上传
     auto: true,
@@ -18,7 +18,6 @@ uploader.on('uploadSuccess', function(file) {
 });
 
 uploader.on('uploadError', function(file) {
-    debugger;
     alert('我擦，为毛传不上去内，莫非是.....');
 });
 
